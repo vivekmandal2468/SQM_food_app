@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foodi App</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /* @import url("https://fonts.googleapis.com/css2?family=Neonderthaw&display=swap"); */
+      @import url("https://fonts.googleapis.com/css2?family=Allura&family=Neonderthaw&display=swap");
+    </style>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <!-- HEADDER -->
+    <header>
+      <nav class="navbar flex between wrapper">
+        <a data-aos="fade-down" data-aos-duration="3500" href="#" class="logo"
+          >Foodi.</a
+        >
+        <!-- DESKTOP MENU -->
+        <ul class="navlist flex gap-3">
+          <li>
+            <a
+              data-aos="fade-down"
+              data-aos-duration="1500"
+              class="li-hover"
+              href="#"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              data-aos="fade-down"
+              data-aos-duration="2000"
+              class="li-hover"
+              href="#"
+              >Menu</a
+            >
+          </li>
+          <li>
+            <a
+              data-aos="fade-down"
+              data-aos-duration="2500"
+              class="li-hover"
+              href="#"
+              >Service</a
+            >
+          </li>
+          <li>
+            <a
+              data-aos="fade-down"
+              data-aos-duration="3000"
+              class="li-hover"
+              href="#"
+              >About us</a
+            >
+          </li>
+          <li>
+            <a
+              data-aos="fade-down"
+              data-aos-duration="3500"
+              class="li-hover"
+              href="#"
+              >Contacts</a
+            >
+          </li>
+        </ul>
+
+        <div class="desktop-action flex gap-2">
+          <a href="#" class="cart-icon">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <!-- bag icon -->
+            <span class="cart-value">0</span>
+          </a>
+          <a id="signin-link" href="index.html" class="btn"
+            >Sign in &NonBreakingSpace;<i
+              class="fa-solid fa-arrow-right-from-bracket"
+            ></i
+          ></a>
+          <!-- sign in + arrow icon -->
+          <a href="#" class="threeDot"><i class="fa-solid fa-bars"></i></a>
+        </div>
+        <ul class="mobile-menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">Service</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contacts</a></li>
+          <li>
+            <a id="signin-link-mobile" href="index.html" class="btn"
+              >Sign in &NonBreakingSpace;<i
+                class="fa-solid fa-arrow-right-from-bracket"
+              ></i
+            ></a>
+            <!-- sign in + arrow icon -->
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- SECTION -->
+    <main>
+      <!-- ---------- 1  -------->
+      <section>
+        <div class="hero-section flex wrapper gap-4">
+          <div class="content">
+            <h1>Enjoy Your Delicious <span>Food</span></h1>
+            <p class="para">
+              We Will Fill Your Tummy With Delicious <br />Food With Fast
+              Delivery
+            </p>
+            <div class="flex gap-2">
+              <a href="#" class="btn">Order now</a>
+              <a href="#" class="social-icon"
+                ><i class="fa-brands fa-square-facebook"></i
+              ></a>
+              <a href="#" class="social-icon"
+                ><i class="fa-brands fa-square-x-twitter"></i
+              ></a>
+              <a href="#" class="social-icon"
+                ><i class="fa-brands fa-square-instagram"></i
+              ></a>
+              <a href="#" class="social-icon"
+                ><i class="fa-brands fa-google"></i
+              ></a>
+            </div>
+          </div>
+          <div class="image-container">
+            <img src="images/delivery-boy.png" />
+          </div>
+        </div>
+      </section>
+      <!-- ----------------2----------->
+      <section>
+        <div class="wrapper p-top">
+          <h5 class="p-center">Our Services</h5>
+          <h2 class="p-center">How Does It Work?</h2>
+        </div>
+        <div class="flex text-center mt-4 gap-4">
+          <div class="service-card">
+            <div class="images-container">
+              <img src="images/easy-to-order.png" />
+            </div>
+            <h3>Easy To Order</h3>
+            <p>You Only Need a Few Steps in Ordering food.</p>
+          </div>
+          <div class="service-card">
+            <div class="images-container">
+              <img src="images/best-quality.png" />
+            </div>
+            <h3>Best Quality</h3>
+            <p>Not only fast for us in quality is also number one</p>
+          </div>
+          <div class="service-card">
+            <div class="images-container">
+              <img src="images/fast-delivery.png" />
+            </div>
+            <h3>Fast Delivery</h3>
+            <p>Delivery that is always On time even faster.</p>
+          </div>
+        </div>
+      </section>
+      <!-- ---------------------3------------>
+      <section>
+        <div class="wrapper p-top p-center">
+          <h5>Our Menu</h5>
+          <h2>The Most Popular</h2>
+        </div>
+        <div class="flex mt-4 gap-2">
+          <div class="card-list text-center flex"></div>
+        </div>
+        <!-- CART TAB -->
+        <div class="cart-tab">
+          <h3>YOUR CART</h3>
+
+          <div class="cart-list">
+            <!-- items injected here -->
+          </div>
+          <div class="total-container">
+            <h4>TOTAL</h4>
+            <h4 class="cart-total">$0.00</h4>
+          </div>
+          <div class="btn-container flex gap-2">
+            <a href="#" class="btn close-btn">CLOSE</a>
+            <a href="#" class="btn">CHECKOUT</a>
+          </div>
+        </div>
+      </section>
+      <!-- -------------------------4------------>
+      <section>
+        <div class="review-papa wrapper p-top flex gap-3">
+          <div class="image-container">
+            <img src="images/delivery-boy-with-phone.png" />
+          </div>
+          <div class="review-container">
+            <h5>Our Reviews</h5>
+            <h2>What they Say?</h2>
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper mt-4">
+                <div class="swiper-slide">
+                  <div class="flex gap-2">
+                    <div class="profile">
+                      <img src="images/profile1.jpeg" />
+                    </div>
+                    <div>
+                      <h4>Daroga Happu Singh</h4>
+                      <div class="mt-half">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="para">
+                    Delicious food and hiegein is also maintained. I highly
+                    recommend this to you.
+                  </p>
+                </div>
+                <div class="swiper-slide">
+                  <div class="flex gap-2">
+                    <div class="profile">
+                      <img src="images/profile2.jpeg" />
+                    </div>
+                    <div>
+                      <h4>Gori Mam</h4>
+                      <div class="mt-half">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="para">
+                    very tasty food and fast delivery i love it.
+                  </p>
+                </div>
+                <div class="swiper-slide">
+                  <div class="flex gap-2">
+                    <div class="profile">
+                      <img src="images/profile3.jpeg" />
+                    </div>
+                    <div>
+                      <h4>Anguri Bhabhi</h4>
+                      <div class="mt-half">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="para">
+                    bahio mjo aa gaoo , tum bhi kha ko dekh leo.
+                  </p>
+                </div>
+              </div>
+              <div class="flex between">
+                <a href="#" class="arrow" id="previous"
+                  ><i class="fa-solid fa-arrow-left"></i
+                ></a>
+                <a href="#" class="arrow" id="next"
+                  ><i class="fa-solid fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- -----------------------------5------------>
+      <section>
+        <div class="wrapper p-top flex">
+          <div class="app-container flex between">
+            <div class="image-container">
+              <img src="images/mobile-app.png" />
+            </div>
+            <div class="content">
+              <h5>our Application</h5>
+              <h2 class="news-h2">Simple Way To Order Your Food.</h2>
+              <p class="para">Discover Food har Jagh and Quickly.</p>
+              <a href="#" class="btn">Get the App</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ----------------------------------------6------ -->
+      <section>
+        <div class="wrapper p-top news">
+          <div class="p-center">
+            <h5 class="news-h5">Our Subscribe</h5>
+            <h2>Subscribe To Our News Letter</h2>
+            <p class="para m-auto news-p">
+              We Recommend You to Subscribe to Our NewsPaper , Drop your email
+              below to get daily updates about us.
+            </p>
+            <label class="input-container flex mt-4 gap-2">
+              <input
+                class="email-dabba"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter your email address &wedge;"
+                autocomplete="off"
+              />
+              <a href="#" class="btn news-btn">Subscribe</a>
+            </label>
+          </div>
+        </div>
+      </section>
+    </main>
+
+
+
+    <!-- BACKGROUND IMAGES -->
+    <img class="image-gradient" src="images/gradient.png" alt="gradient" />
+    <div class="layer-blur"></div>
+
+    <!-- FOOter -->
+    <footer>
+      <div class="footer-container wrapper">
+        <div class="wrapper flex gap-4">
+          <div class="footer-wrapper">
+            <a href="#" class="logo">Foodi</a>
+            <p class="mt-one-half flex">
+              We Will Fill Your Tummy With Delicious <br />Food With Fast
+              Delivery
+            </p>
+            <div class="flex gap-2 mt-one-half">
+              <a href="#" class="social-icon"
+                ><i class="fa-brands fa-square-facebook"></i
+              ></a>
+              <a href="#" class="social-icon"
+                ><i class="fa-brands fa-square-x-twitter"></i
+              ></a>
+              <a href="#" class="social-icon"
+                ><i class="fa-brands fa-square-instagram"></i
+              ></a>
+              <a href="#" class="social-icon"
+                ><i class="fa-brands fa-google"></i
+              ></a>
+            </div>
+          </div>
+          <ul class="footer-wrapper">
+            <li>
+              <h4>Our Menu</h4>
+            </li>
+            <li class="mt-one-half">
+              <a href="#" class="footer-link">Special</a>
+            </li>
+            <li class="mt-one-half">
+              <a href="#" class="footer-link">Popular</a>
+            </li>
+            <li class="mt-one-half">
+              <a href="#" class="footer-link">Category</a>
+            </li>
+          </ul>
+          <!-- ---------------------------------------------------------- -->
+          <ul class="footer-wrapper">
+            <li>
+              <h4>Company</h4>
+            </li>
+            <li class="mt-one-half">
+              <a href="#" class="footer-link">Why we</a>
+            </li>
+            <li class="mt-one-half">
+              <a href="#" class="footer-link">Patner with us</a>
+            </li>
+            <li class="mt-one-half">
+              <a href="#" class="footer-link">About us</a>
+            </li>
+            <li class="mt-one-half">
+              <a href="#" class="footer-link">FAQ's</a>
+            </li>
+          </ul>
+          <!-- ---------------------------------------------------------- -->
+          <ul class="footer-wrapper">
+            <li>
+              <h4>Support</h4>
+            </li>
+            <li class="mt-one-half">
+              <a href="#" class="footer-link">Account</a>
+            </li>
+            <li class="mt-one-half">
+              <a href="#" class="footer-link">Support Center</a>
+            </li>
+            <li class="mt-one-half">
+              <a href="#" class="footer-link">Feedback</a>
+            </li>
+            <li class="mt-one-half">
+              <a href="#" class="footer-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- ----------------------------------------------------------------------------------------->
+    <!-- <section>
+      <div class="developer p-top wrapper flex gap-3">
+        <div class="my-img img">
+          <img src="images/web-my-photo.jpg" />
+        </div>
+        <div class="my-info">
+          <h5>DEVELOPED BY</h5>
+          <h1>VIVEK MANDAL</h1>
+          <p class="signature">VIVEK MANDAL...</p>
+        </div>
+      </div>
+    </section> -->
+    <!-- --------------------------------------------------------------------------------------------- -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script defer src="script.js"></script>
+  </body>
+</html>
+

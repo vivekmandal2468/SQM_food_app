@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foodi | Login</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Allura&family=Neonderthaw&display=swap");
+      /* Keep Home button visible on mobile for the login page */
+      @media screen and (max-width: 768px) {
+        .navbar .desktop-action .btn {
+          display: inline-block !important;
+        }
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar flex between wrapper">
+        <a href="home.html" class="logo">Foodi.</a>
+        <div class="desktop-action flex gap-2">
+          <a href="home.html" class="btn">Home</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="auth-wrapper">
+      <div class="auth-card">
+        <h2 class="auth-title">Welcome back</h2>
+        <p class="para">Sign in to continue ordering your favorites.</p>
+        <div id="auth-error" class="auth-error" style="display: none;"></div>
+        <form id="login-form" class="auth-form" data-redirect="home.html">
+          <div class="form-group">
+            <label for="login-email">Email</label>
+            <input id="login-email" type="email" placeholder="you@example.com" autocomplete="email" required />
+          </div>
+          <div class="form-group">
+            <label for="login-password">Password</label>
+            <input id="login-password" type="password" placeholder="••••••••" autocomplete="current-password" required />
+          </div>
+          <div class="form-actions flex between">
+            <label class="remember flex">
+              <input type="checkbox" />
+              <span>Remember me</span>
+            </label>
+            <a href="#" class="small-link">Forgot password?</a>
+          </div>
+          <button type="submit" class="btn auth-submit">Sign in</button>
+        </form>
+        <p class="auth-footer">
+          New to Foodi? <a href="#" class="small-link">Create an account</a>
+        </p>
+      </div>
+    </main>
+
+    <img class="image-gradient" src="images/gradient.png" alt="gradient" />
+    <div class="layer-blur"></div>
+
+    <script defer src="script.js"></script>
+  </body>
+</html>
+
